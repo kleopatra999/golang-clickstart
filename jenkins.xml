@@ -73,28 +73,29 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>
-node_version=v0.10.2
+      <command>go_version=go1.0.3.linux-amd64
 
-file_name=node-$node_version-linux-x64
-
-if [ ! -e $file_name ]
+if [ ! -e $go_version.tar.gz ]
 then
-    wget http://nodejs.org/dist/$node_version/$file_name.tar.gz
-    tar xf $file_name.tar.gz
+    wget https://go.googlecode.com/files/$go_version.tar.gz
+    tar xf $go_version.tar.gz
 fi
-rm -rf target
-mkdir target
 
-node_dir=$PWD/$file_name
+rm -rf target &amp;&amp; mkdir target
+
+export GOROOT=$WORKSPACE/go
+export PATH=$PATH:$GOROOT/bin
 
 cd app
-$node_dir/bin/npm install
-$node_dir/bin/npm test
+
+go get
+go test
+go build -o app
+
+echo &quot;web: ./app&quot; &gt; Procfile
 
 rm -rf ../target/app.zip
 zip -r ../target/app.zip *
-
 </command>
     </hudson.tasks.Shell>
     <com.cloudbees.plugins.deployer.DeployBuilder>
