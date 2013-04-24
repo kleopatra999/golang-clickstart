@@ -1,0 +1,24 @@
+{
+    "id": "golang-clickstart",
+    "name": "Google Go webapp",
+    "source": "github",
+    "description" : "Deploy a Go Lang app with testing and building (beta)",
+    "icon" : "https://d3ko533tu1ozfq.cloudfront.net/clickstart/nodejs_large.png",    
+
+    "supported-by" : "community",
+    "order" : 5,
+
+    "runtime": {
+        "type": "golang",
+         "app-parameters" : { 
+            "runtime.PLUGIN.SRC.golang": "https://s3.amazonaws.com/clickstacks/admin/procfile-plugin-0.1.1.zip"
+        }    
+    },
+    "build-with-jenkins": {
+	"template": {
+            "type": "https://raw.github.com/michaelneale/golang-clickstart/master/jenkins.xml",
+            "options": {
+            }            
+        }
+    }
+}
