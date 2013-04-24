@@ -6,7 +6,7 @@ Jenkins runs tests via npm.
 package.json is used to specify what packages are needed - main.js is the default server app
 (you can set main_js via bees config:set to override it to something else)
 
-<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/CloudBees-community/nodejs-clickstart/master/clickstart.json"><img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/deployInstantly.png"/></a>
+<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/michaelneale/golang-clickstart/master/clickstart.json"><img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/deployInstantly.png"/></a>
 
 # To run manually locally
 
