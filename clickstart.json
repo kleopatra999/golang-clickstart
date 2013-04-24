@@ -2,7 +2,7 @@
     "id": "golang-clickstart",
     "name": "Google Go webapp",
     "source": "github",
-    "description" : "Deploy a Go Lang app with testing and building (beta)",
+    "description" : "Deploy a starter Go Lang app (sample wiki) with testing and building via Jenkins",
     "icon" : "https://d3ko533tu1ozfq.cloudfront.net/clickstart/googlego.png",    
 
     "supported-by" : "community",
