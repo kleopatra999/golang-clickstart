@@ -3,6 +3,8 @@
 This shows off the google <a href="http://golang.org">go language</a> on CloudBees. 
 This starter app includes a simple wiki app (in Go) and a Jenkins build that runs tests and deploys if the tests pass.
 
+<img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/googlego.png">
+
 See <a href="http://golang.org/doc/articles/wiki/">here</a> for the article about building the app in Go.
 
 Press the button to build, test and deploy this instantly:

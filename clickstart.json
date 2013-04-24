@@ -3,7 +3,7 @@
     "name": "Google Go webapp",
     "source": "github",
     "description" : "Deploy a Go Lang app with testing and building (beta)",
-    "icon" : "https://d3ko533tu1ozfq.cloudfront.net/clickstart/nodejs_large.png",    
+    "icon" : "https://d3ko533tu1ozfq.cloudfront.net/clickstart/googlego.png",    
 
     "supported-by" : "community",
     "order" : 5,
