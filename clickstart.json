@@ -6,7 +6,7 @@
     "icon" : "https://d3ko533tu1ozfq.cloudfront.net/clickstart/googlego.png",    
 
     "supported-by" : "community",
-    "order" : 5,
+    "order" : 2,
 
     "runtime": {
         "type": "golang",
